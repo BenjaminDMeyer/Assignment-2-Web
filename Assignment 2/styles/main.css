@@ -1,0 +1,91 @@
+/* Background image - repeating both horizontally and vertically */
+html {
+    background-image: url("../images/bats.gif");
+    background-repeat: repeat repeat;
+    margin: 15px;
+}
+
+/* Setting the body of the webste as per the lab schematic (width, background color etc.) */
+body  {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	width: 800px;
+	background-color: white;
+	border: solid black;
+	margin: 0 auto;
+	position: relative;
+	text-align: center;
+}
+
+/* Making the links bold and orange, changing to green if selected by mouse or keyboard */
+a {
+    font-weight: bold;
+    color: orange;
+}
+a:link, a:visited { 
+    color: orange; 
+}
+a:hover, a:focus { 
+    color: green;
+}
+
+/* Header with gradient added */
+header {
+	background: linear-gradient(45deg, white, orange, orange 75%, black);
+}
+header img { 
+	float: left; 
+} 
+header h2 {
+	font-size: 230%;
+}
+header h3 {
+	font-size: 125%;
+}
+
+/* Main with border added */
+main{
+	border-top: 1px solid black;
+	border-bottom: 1px solid black;
+}
+main h1 { 
+	font-size: 140%;
+}
+main h1:first-letter { 
+	font-size: 240%;
+}
+main h2 {
+	font-size: 125%;
+}
+main h3 {
+	font-size: 110%;
+}
+main h4 {
+	font-size: 140%;
+}
+ul {
+	line-height: 1.5;
+}
+
+/* Footer with gradient added */
+footer{
+	background: linear-gradient(45deg, black, orange, orange 25%, white);
+}
+footer p {
+	font-size: 90%;
+	text-align: center;
+}
+
+/* Sidebar added to the left side of the content */
+#side {
+	width: 160px;
+	position: fixed;
+	z-index: 1;
+	overflow-x: hidden;
+}
+
+/* Content formatted relative to the sidebar - border added */
+#content {
+	margin-left: 160px;
+	border: solid black;
+	border-width: 1px 3px;
+}
